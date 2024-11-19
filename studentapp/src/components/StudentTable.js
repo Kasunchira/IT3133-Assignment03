@@ -6,26 +6,28 @@ export default function StudentTable(props){
             <div className="leftDiv">
                 <table border="1">
                    <thead>
-                    <tr>
-                        <td>First Name</td>
-                        <td>Last Name</td>
-                        <td>Age</td>
-                        <td>Course</td>
-                        <td>Gender</td>
-                        <td>Address</td>
-                    </tr>
+                        <tr>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Age</td>
+                            <td>Course</td>
+                            <td>Gender</td>
+                            <td>Country</td>
+                            <td>Profile</td>
+                        </tr>
                     </thead> 
                     <tbody>
                         {
                             props.students.map (student=>
-                                <tr>
+                             <tr>
                                 <td>{student.firstName}</td>
                                 <td>{student.lastName}</td>
                                 <td>{student.age}</td>
                                 <td>{student.course}</td>
                                 <td>{student.gender}</td>
                                 <td>{student.address.country}</td>
-                                </tr>
+                                <td><button>View</button></td>
+                             </tr>
                             )
                         }
                     </tbody>
