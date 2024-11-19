@@ -6,7 +6,7 @@ import StudentTable from './components/StudentTable';
 function App() {
   return (
     <div className="App">
-      <h1>Student's Information Portal</h1>
+      <h1>Students Information Portal</h1>
       <hr/>
       <table width="100%">
         <tbody>
