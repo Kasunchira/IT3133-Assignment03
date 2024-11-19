@@ -30,7 +30,7 @@ export default function StudentTable(props){
                                 <td>{student.course}</td>
                                 <td>{student.gender}</td>
                                 <td>{student.address.country}</td>
-                                <td><button onClick={()=>{setStu(student)}}>View</button></td>
+                                <td><button id={student.studentId} onClick={()=>{setStu(student)}}>View</button></td>
                              </tr>
                             )
                         }
