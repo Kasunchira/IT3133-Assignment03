@@ -1,5 +1,5 @@
 import '../assets/css/compo.css' ;
-import Profile from '../Profile';
+import Profile from './Profile';
 import {useState} from 'react';
 
 export default function StudentTable(props){
